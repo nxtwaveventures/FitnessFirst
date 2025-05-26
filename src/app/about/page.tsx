@@ -45,11 +45,11 @@ export default function About() {
                             >
                                 <div className="absolute inset-0 bg-gradient-to-r from-[rgba(127,255,127,0.2)] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                                 <Image
-                                    src="/images/trainer.jpg"
+                                    src="/images/trainer-hero.jpg"
                                     alt="Anamika - Founder"
                                     width={600}
-                                    height={400}
-                                    className="rounded-lg transform group-hover:scale-105 transition-transform duration-300"
+                                    height={600}
+                                    className="rounded-lg transform group-hover:scale-105 transition-transform duration-300 object-cover"
                                     priority
                                 />
                                 <div className="absolute bottom-6 left-6 right-6 p-4 glass-card bg-opacity-90 transform translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
