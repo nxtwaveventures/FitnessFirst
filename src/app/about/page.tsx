@@ -41,15 +41,21 @@ export default function About() {
                                 initial={{ opacity: 0, x: -20 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.6 }}
-                                className="glass-card p-6 relative overflow-hidden"
+                                className="glass-card p-6 relative overflow-hidden group"
                             >
+                                <div className="absolute inset-0 bg-gradient-to-r from-[rgba(127,255,127,0.2)] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                                 <Image
-                                    src="/images/nature-fitness.jpg"
-                                    alt="Nature and Fitness"
+                                    src="/images/trainer.jpg"
+                                    alt="Anamika - Founder"
                                     width={600}
                                     height={400}
-                                    className="rounded-lg"
+                                    className="rounded-lg transform group-hover:scale-105 transition-transform duration-300"
+                                    priority
                                 />
+                                <div className="absolute bottom-6 left-6 right-6 p-4 glass-card bg-opacity-90 transform translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                                    <h3 className="text-xl font-bold text-gradient mb-2">Anamika</h3>
+                                    <p className="text-white/90">Founder & Wellness Guide</p>
+                                </div>
                             </motion.div>
                             <motion.div
                                 initial={{ opacity: 0, x: 20 }}
@@ -67,6 +73,12 @@ export default function About() {
                                     Our journey is rooted in the belief that true wellness comes from
                                     living in harmony with nature. We grow our own microgreens and
                                     design our workouts to reflect natural movements and rhythms.
+                                </p>
+                                <p className="text-white/80">
+                                    As a passionate advocate for natural wellness, I've dedicated myself
+                                    to creating a space where technology and nature coexist harmoniously,
+                                    helping others achieve their fitness goals while staying connected to
+                                    the earth.
                                 </p>
                             </motion.div>
                         </div>
